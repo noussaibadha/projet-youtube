@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css" integrity="sha512-i5VzKip7owqOGjb0YTF8MR2J9yBVO3FLHeazKzLp354XYTmKcqEU3UeFYUw82R8tV6JqxeATOfstCfpfPhbyEA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@100&family=Khand:wght@300;400&family=Montserrat:wght@200;400;500;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <title>Projet Youtube</title>
+</head>
+<body>
+      <!--Cursor-->
+      <div class="cursor-dot"></div>
+      <div class="cursor-outline"></div>
+
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="#" class="nav-logo" id="logo-site">
+                        <img src="./asset/image/logo.png" alt="logo" title="Logo" class="logo-site">
+                    </a>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <div class="nav-bar">
+                        <ul class="nav-list" aria-label="Menu de navigation">
+                            <li class="nav-items">
+                                <a href="#accueil" class="nav-link pointer">Accueil</a>
+                            </li>
+                            <li class="nav-items">
+                                <a href="#a-propos" class="nav-link pointer">FAQ</a>
+                            </li>
+                            <li class="nav-items">
+                                <a href="#videos" class="nav-link pointer">Vidéos</a>
+                            </li>
+                            <li class="nav-items">
+                                <a href="#short" class="nav-link pointer">Shorts</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-mobile">
+                        <ul class="nav-list" aria-label="Menu de navigation">
+                            <li class="nav-items-mobile">
+                                <a href="#accueil" class="nav-link">
+                                    <i class="fa-solid fa-house" ></i>
+                                </a>
+                            </li>
+                            <li class="nav-items-mobile ">
+                                <a href="#a-propos" class="nav-link">
+                                    <i class="fa-solid fa-user"></i>
+                                </a>
+                            </li>
+                            <li class="nav-items-mobile">
+                                <a href="#videos" class="nav-link">
+                                    <i class="fa-solid fa-video"></i>
+                                </a>
+                            </li>
+                            <li class="nav-items-mobile">
+                                <a href="#short" class="nav-link">
+                                    <i class="fa-solid fa-photo-film"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--============================ BKG ================================-->
+    <!-- <div class="bg-text-container-main">
+        <div class="animate-text">
+          <span class="animate">Musique&nbsp;</span>
+          <span class="animate">Cinema&nbsp;</span>
+          
+        </div>
+        <div class="animate-text left">
+          <span class="animate">Musique&nbsp;</span>
+          <span class="animate">Cinema&nbsp;</span>
+        </div>
+    </div> -->
+
+        
+          
+       
+        <section class="accueil" id="accueil">
+            <div id="video">
+                <video class="video-banniere" src="./asset/mp4/Sequence_01_4.mp4" autoplay loop muted></video>
+                <!-- Ajout des boutons sur la vidéo -->
+                <div class="video-button">
+                    <div id="video-menu"><a href="#videos" class="pointer">Videos</a></div>
+                    <div id="video-commande" ><a href="#short" class="pointer">Shorts</a>   </div>  
+                </div>
+            </div>
+        </section>
+
+        <section class="a-propos" id="a-propos">
+            <div class="anime">
+                <span style="--i:1">F</span>
+                <span style="--i:2">A</span>
+                <span style="--i:3">Q</span>
+                <!-- <span style="--i:4">r</span>
+                <span style="--i:5">o</span>
+                <span style="--i:6">p</span>
+                <span style="--i:7">o</span>
+                <span style="--i:8">s</span> -->
+            </div>
+            <div class="faq-container">
+                <div class="faq-image">
+                    <img src="./asset/image/hugo.webp" alt="Image d'un point d'interrogation avec 2 personnage" title="Image FAQ">
+                </div>
+                <div class="faq-all-question">
+                    <div class="faq-question">
+                        <button class="pointer">
+                            <span class="pointer">Quels sont les objectifs de la chaine</span>
+                            <span class="pointer"><i class="fa-solid fa-chevron-down"></i></span>
+                        </button>
+                        <p>L'objectif de notre chaîne est de diffuser la magie de la musique de cinéma en partageant des analyses approfondies et des anecdotes fascinantes. Nous visons à éduquer les amateurs de films en explorant les techniques de composition et en mettant en lumière le rôle crucial de la musique dans la narration cinématographique. Notre but est également d'offrir du divertissement à travers une variété de contenus tout en créant une communauté passionnée où les cinéphiles peuvent partager leur amour pour la musique de film et discuter de leurs œuvres préférées.</p>
+                    </div>
+                    <div class="faq-question">
+                        <button class="pointer">
+                            <span class="pointer">Qui est la HugoTeam ?</span>
+                            <span><i class="fa-solid fa-chevron-down"></i></span>
+                        </button>
+                        <p> La Hugo Team représente toute l'équipe qui m'accompagne et me soutient, que ce soit lors des tournages ou du montage de mes vidéos. Elle est constituée de plusieurs membres : Noussaïba développeuse et assistante graphiste, Ethan le développeur, Walid le Cameraman et chef de projet scénar, , Aya qui fait le son et le scénar, Eduardo le strat réalisateur, Romain le chef de projet pour le montage, Aristide le script et le scénar,  Franck en charge de l'éclairage et du scénario, et enfin Evan également développeur.</p>
+                    </div>
+                    <div class="faq-question">
+                        <button class="pointer">
+                            <span class="pointer">Pourquoi les concepts des micro-trottoir ?</span>
+                            <span><i class="fa-solid fa-chevron-down"></i></span>
+                        </button>
+                        <p>Nous avons choisi ce concept pour présenter les compositeurs de musique de film aux gens, en mettant l'accent sur le côté ludique et humoristique à travers les réactions des personnes interrogées lors du micro-trottoir. Notre objectif est de sensibiliser notre public à l'importance des compositeurs dans l'industrie cinématographique tout en les divertissant.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+              
+        </section>
+
+        <section class="video" id="videos">
+                <div class="anime">
+                    <span style="--i:1">N</span>
+                    <span style="--i:2">o</span>
+                    <span style="--i:3">s</span>
+                    <span style="--i:4">&#x202F; &#x202F;</span>
+                    <span style="--i:5">V</span>
+                    <span style="--i:6">i</span>
+                    <span style="--i:7">d</span>
+                    <span style="--i:8">e</span>
+                    <span style="--i:9">o</span>
+                    <span style="--i:10">s</span>
+                </div>
+
+                <div class="main_video" id="main_video">
+                  <video controls src="asset/mp4/clouds_-_111179 (540p).mp4" width="700" loading="lazy"></video>
+                </div>
+
+
+                
+        </section>
+
+        <section id="scroll">
+            <div id="text-scroll">
+                MUSIQUE &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                CINÉMA &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                HUGOTROTTOIR &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                VIDEO &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                MICRO &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                YOUTUBE &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                montage &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                contenu &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                humour &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                son &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                blind-test &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                CINÉMA &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                HUGO TROTTOIR &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                VIDEO &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                MICRO &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                YOUTUBE &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                montage &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                contenu &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                humour &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                son &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                blind-test<span class="emoji">🎬</span>&#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                CINÉMA &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                HUGO TROTTOIR &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                VIDEO &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                MICRO &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                YOUTUBE &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                montage &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                contenu &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                humour &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                MUSIQUE &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                CINÉMA &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                HUGOTROTTOIR &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                VIDEO &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                MICRO &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                YOUTUBE &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                montage &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                contenu &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                humour &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                son &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                blind-test &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                CINÉMA &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                HUGO TROTTOIR &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                VIDEO &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                MICRO &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                YOUTUBE &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                montage &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                contenu &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                humour &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                son &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                blind-test<span class="emoji">🎬</span>&#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                CINÉMA &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                HUGO TROTTOIR &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                VIDEO &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                MICRO &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                YOUTUBE &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                montage &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                contenu &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                humour &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                
+            </div>
+            
+            
+               
+            <div id="text-scroll">
+                MUSIQUE &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                CINÉMA &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                HUGOTROTTOIR &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                VIDEO &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                MICRO &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                YOUTUBE &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                montage &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                contenu &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                humour &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                son &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                blind-test &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                CINÉMA &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                HUGO TROTTOIR &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                VIDEO &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                MICRO &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                YOUTUBE &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                montage &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                contenu &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                humour &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                son &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                blind-test<span class="emoji">🎬</span>&#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                CINÉMA &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                HUGO TROTTOIR &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                VIDEO &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                MICRO &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                YOUTUBE &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                montage &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                contenu &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                humour &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                MUSIQUE &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                CINÉMA &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                HUGOTROTTOIR &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                VIDEO &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                MICRO &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                YOUTUBE &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                montage &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                contenu &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                humour &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                son &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                blind-test &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                CINÉMA &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                HUGO TROTTOIR &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                VIDEO &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                MICRO &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                YOUTUBE &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                montage &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                contenu &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                humour &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                son &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                blind-test<span class="emoji">🎬</span>&#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                contenu &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                humour &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                son &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                blind-test &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                CINÉMA &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                HUGO TROTTOIR &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                VIDEO &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                MICRO &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                YOUTUBE &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+                montage &#x202F;&#x202F;&#x202F;&#x202F;&#x202F; <span class="emoji">🎬</span> &#x202F;&#x202F;&#x202F;&#x202F;&#x202F;
+            </div>
+        </section>
+
+
+        
+
+        <section class="short" id="short">
+            <div class="anime">
+                <span style="--i:1">S</span>
+                <span style="--i:2">h</span>
+                <span style="--i:3">o</span>
+                <span style="--i:4">r</span>
+                <span style="--i:5">t</span>
+                <span style="--i:6">s</span>
+            </div>
+            <div class="all-video">
+                <div data-aos="fade-up">
+                    <video loop width="250" class="video-film pointer" loading="lazy">
+                        <source src="./asset/mp4/video-film.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div data-aos="fade-down">
+                    <video muted loop width="250" class="video-film pointer" loading="lazy">
+                        <source src="./asset/mp4/video-film.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div data-aos="fade-up">
+                    <video muted loop width="250" class="video-film pointer" loading="lazy">
+                        <source src="./asset/mp4/video-film.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <div class="content-footer">
+            <div id="reseaux-footer">
+                <a href="https://www.youtube.com/@Hugotrottoir/featured" target="_blank" class="pointer"><i class="fa-brands fa-youtube pointer" style="color: #ffffff;"></i></a>
+                <a href="https://www.youtube.com/@Hugotrottoir/featured" target="_blank" class="pointer"><i class="fa-brands fa-instagram pointer" style="color: #ffffff;"></i></a>
+                <a href="https://www.youtube.com/@Hugotrottoir/featured" target="_blank" class="pointer"><i class="fa-brands fa-tiktok pointer" style="color: #ffffff;"></i></a>
+            </div>
+            <div class="profil-footer">
+                <img src="asset/image/logo.png" alt="">
+                <h6 class="pointer"><a href="https://www.youtube.com/@Hugotrottoir" class="pointer">Abonnez-vous</a></h6>
+            </div>
+            <div class="scroll-top">
+                <a href="#" class="pointer">
+                    <button class="pointer"><i class="fa-solid fa-arrow-up pointer"></i></button>
+                </a>
+            </div>
+        </div>
+        <div class="credit-footer">
+            <p> &copy - Hugo trottoir - 2024-Développer &#x202F; par &#x202F; : &#x202F; <a href="https://noussaiba-dhaou.fr/" class="pointer">Noussaïba Dhaou</a>,&#x202F; <a href="https://ethan-sulejman.fr/" class="pointer">Ethan Sulejman</a>,&#x202F; <a href="https://evanmougani.fr/" class="pointer">Evan Mougani</a></p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./asset/js/app.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

@@ -1,0 +1,787 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
+:root[data-theme="light"] {
+    --background: #030508;
+    --text: rgb(255, 255, 255);
+    --primary: #f7b741;
+    --secondary: #f7b741;
+    --accent: #f7b741;
+}
+
+:root[data-theme="dark"] {
+    --text: rgb(255, 255, 255);
+    --background: #000c0c;
+    --primary: #f7b741;
+    --secondary: #f7b741;
+    --accent: #f7b741;
+}
+
+:root {
+    --header-height: 3.8rem;
+
+    /* couleurs */
+    --text: #f6f6f6;
+    --background: #000c0c;
+    --primary: #f7b741;
+    --secondary: #f7b741;
+    --accent: #f7b741;
+    --bluring: #f7b74162;
+
+    /* font weight */
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+}
+
+
+
+/*=========================== Animation text ===================================*/
+.anime {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .anime span {
+    position: relative;
+    display: inline-block;
+    font-family: var(--body-font);
+    font-size: clamp(5rem, 17vw, 14rem);
+    color: var(--accent);
+    text-transform: uppercase;
+    animation: flip 10s linear infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+.fondu-out {
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+}
+
+
+
+/*==================================== Fin Animation Text ==========================================*/
+
+/*BG*/
+
+
+/* Reset CSS */
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #333;
+    overflow: scroll;
+    background-image: url('../image/fond.png');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+.header {
+    background-color:r #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+.nav{
+    position: absolute;
+    left: 0px;
+    top: 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    width: 101%;
+    transform: skewY(-1.4deg);
+    background: #ffffffbd;
+    margin-top: 32px;
+    margin-left: -21px;
+    height: 12%;
+}
+
+.nav-menu {
+    margin: auto;
+    font-size: clamp(0.5rem, 1.5vw, 2.5rem);
+}
+
+
+.nav-bar {
+    transform: translate(0px, 50%);
+}
+.nav-bar li a{
+    padding: 0 3rem 0 3rem;
+}
+
+.nav-logo img {
+    height: 100px;
+    width: auto;
+    margin-top: 6px;
+    padding-left: 6vw
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    padding-right: 3vw;
+}
+
+.nav-items {
+    margin-right: 20px;
+    margin-top: -1.5vw;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--accent);
+    transition: color 0.3s ease;
+    transition: 0.4s;
+    font-size: 2.3rem;
+}
+
+.nav-link:hover {
+    color: #5472AE;
+    
+}
+
+/*Cache le navbar en mode ordinateur*/
+.nav-mobile {
+   display: none;
+}
+
+section{
+    margin-block: 12rem;
+}
+
+h2 {
+    transform: skewY(-3deg);
+    color: #5472AE;
+}
+
+/*Partie video*/
+.video-banniere{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: clamp(-18.5rem, -18.5vw, -14.5rem);
+}
+
+#video-phrase{
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size:45px;
+    text-align: center;
+}
+
+.video-button {
+    display: flex;
+    position: absolute;
+    margin-top: clamp(-12.5rem, -7.5vw, -2.5rem);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#video-menu{
+    width: clamp(11.5vw,21vw,23.5vw);
+    height: clamp(4.5vw,5vw,4.5vw);
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#video-commande{
+    width: clamp(11.5vw,21vw,23.5vw);
+    height: clamp(4.5vw,5vw,4.5vw);
+    background-color: #fff;
+    border-radius: 20px;
+    margin-left: 10vw;
+    text-align: center;
+}
+
+.video-button a {
+    text-decoration: none;
+    color: #000;
+    font-size: clamp(2.5vw, 2vw, 3.5vw);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: clamp(0.5vw, 1vw, 1.5vw);
+} 
+
+#video-commande:hover{
+    background-color: #f7b741;
+    transition: .7s ease-in-out;
+}
+
+#video-menu:hover{
+    background-color: #f7b741;
+    transition: .7s ease-in-out;
+}
+
+/*Fin de la partie video*/
+
+
+/* section a propos */
+.faq .faq-title{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    color: var(--text);
+}
+
+.faq-container {
+    max-width: 80vw;
+    padding: 2vh 2vh 2vh 2vh;
+    background: rgba( 255, 255, 255, 0.15 );
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+    margin: auto;
+    padding: 2rem;
+    /* margin: 2rem; */
+    /* position: relative;
+    left: 50%; 
+    transform: translateX(-53%); */
+}
+
+.faq-question span {
+    font-size: clamp(14px, 3.5vw, 34px);
+}
+
+
+@media screen and (min-width: 1300px){
+    .faq-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 90vw;
+        margin: auto;
+    }
+    .faq-all-question{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 65%;
+        padding: 2rem;
+    }
+    
+    .faq-image img{
+        width: 100%;
+        height: 100%;
+        align-self: center;
+    }
+    
+}
+
+
+
+.faq-container .faq-image {
+    width: 100%; 
+    max-width: 500px; 
+    min-width: 200px; 
+    height: auto; 
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.faq-container .faq-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+.faq-question{
+    color: var(--text);
+}
+
+.faq-question button {
+    border-radius: 0.8rem;
+    position: relative; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5%;
+    margin: 4px;
+    border: none;
+    outline: none;
+    font-size: clamp(14px, 4vw, 30px);
+    font-weight: 700;
+    cursor: pointer;
+    background: var(--primary);
+    color: white;
+}
+
+
+
+.faq-question p{
+    font-size: clamp(14px, 3vw, 22px);
+    max-height: 0;
+    opacity: 0;
+    line-height: 1.5;
+    overflow: hidden;
+    transition: all .6s ease;
+}
+
+.faq-question p.show{
+    max-height: 200px;
+    opacity: 1;
+    padding: 30px 15px 30px 15px;
+
+}
+
+.faq-question button .rotate{
+    transition: 0.3s;
+    transform: rotate(180deg);
+}   
+
+/* fin de la section  */
+
+/*============================== Background Text =====================================================================*/
+/* .bg-text-container-main {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    z-index: -999;
+    width: 100%;
+    
+}
+
+@keyframes text-scrolling {
+    0% {
+        transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+        transform: translate3d(0%, 0, 0);
+    }
+}
+
+.animate-text {
+    animation: text-scrolling 30s linear infinite; 
+    will-change: transform;
+    display: block;
+    position: relative;
+    white-space: nowrap;
+    
+}
+
+.animate-text.left {
+    animation-direction: reverse;
+    
+}
+
+span.animate {
+    font-size: 220px;
+    color: transparent;
+    -webkit-text-stroke: 2px #c17b1358;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 0.65;
+    min-width: auto;
+    font-weight: 800;
+    font-family: montserrat;
+    display: flex;
+    align-items: center;
+    line-height: 1.5; 
+    transform: skewY(-7deg);
+    overflow: hidden; 
+    text-overflow: clip; 
+    
+} */
+
+/*=============================== BK FIN ========================================*/
+
+/*================================== SCROLL BAR ===============================*/
+
+::-webkit-scrollBar {
+    width: 0.60rem;
+    /* background-color: var(--scroll-bar-color); */
+    background-color: rgba(0, 0, 0, 0.406);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    /* background-color: var(--scroll-thumb-color); */
+    background-color: var(--accent);
+    border-radius: .5rem;
+}
+
+/*==================================== SCROLL BAR FIN ==========================================*/
+
+
+
+/* Main styles */
+.main {
+    padding: 40px 0;
+}
+
+
+
+@keyframes reveal {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+
+.section__title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+
+/* debut banniere */
+
+.banniere-main {
+    position: relative;
+    width: 100%; /* Prend la largeur du parent */
+    height: 60vh; /* Hauteur ajustée automatiquement en fonction de la largeur */
+    animation: pop linear 3s;
+}
+
+.big-title{
+    margin-top: 10.5rem;
+}
+
+@keyframes pop {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* .main-title{
+    position: absolute;
+    top: 0;
+} */
+
+
+
+.banniere-main video {
+    width: 100%; /* Prend la largeur du parent */
+    height: 90%; /* Prend la hauteur du parent */
+    object-fit: cover;
+    /* filter: blur(.8px); */
+     /* Pour couvrir tout le conteneur parent */
+}
+.text-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000000;
+    height: 105%;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    font-weight: 900;
+    mix-blend-mode: multiply;
+}
+
+.main_video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-video{
+    margin: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    margin-block: 2rem;
+}
+
+.all-video video{
+    padding: 1.5rem;
+    background-color: var(--accent);
+    border-radius: 1rem;
+    transition: .7s ease-in-out;
+}
+
+.all-video video:not(:hover){
+    filter: grayscale(1);
+    transition: .7s ease-in-out;
+}
+
+.all-video video:hover{
+    cursor: pointer;
+}
+
+/* fin de la banniere */
+
+
+/* Debut du Cursor*/
+.cursor-dot {
+    width: 10px;
+    height: 10px;
+    background-color: var(--accent);
+    transform: translate(-50%, -50%);
+  	z-index:100;
+}
+
+.cursor-outline {
+    width: 35px;
+    height: 35px;
+    border: 2px solid var(--accent);
+    background-color: #f3f4f556;
+    transform: translate(-50%, -50%);
+}
+
+
+.cursor-dot,
+.cursor-outline {
+    position: fixed;
+    border-radius: 50%;
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* Fin du Cursor*/
+
+/* Section A propos*/
+
+
+
+/* Section A propos fin */
+
+.text-a-propos{
+    font-size: 1.5rem;
+    color: #fff;
+    width: 40vw;
+    text-align: center;
+    margin: 7vw;
+}
+
+/* Section scroll */    
+
+#scroll{
+    margin-top: 15vw;
+}
+
+#text-scroll{
+    padding-block: 2%;
+    font-size: 5.9vw;
+    display: flex;
+    justify-content: center;
+    text-overflow: clip clip;
+    white-space: nowrap;
+    color: var(--accent);
+}
+#text-scroll:nth-child(2){
+    transform: translateX(0);
+}
+#text-scroll:nth-child(3){
+    transform: translateX(0);
+}
+
+#text-scroll .emoji {
+    font-size: 4vw;
+    margin-top: 0.6vw;
+}
+
+
+/* Section scroll fin */
+
+/* Footer style */
+footer{
+    background-color: #333;
+}
+
+.content-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* align-items: flex-start; */
+    color: #fff;
+    /* padding: 8px 0; */
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+
+#reseaux-footer{
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 3.5rem;
+}
+
+footer img {
+    width: 10.5rem;
+    height: 10.5rem;
+    /* margin: 2vw; */
+}
+
+#reseaux-footer a svg{
+    font-size: 3.5vw;
+}
+
+.profil-footer{
+    font-size: 2rem;
+}
+
+.profil-footer h6 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.profil-footer h6 a:hover{
+    color: var(--accent);
+    transition: 0.5s;
+}
+
+footer .scroll-top a button{
+    border: none;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    color: white;
+    font-size: 1.5rem;
+    background: var(--accent);
+    margin-top: 3.5rem;
+}
+
+footer .scroll-top a button:hover{
+    cursor: pointer;
+}
+
+.credit-footer a{
+    color: white;
+}
+
+
+
+.credit-footer p{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 1010px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .nav-bar{
+        display: none;
+    }
+
+    .nav-logo img{
+        height: clamp(7vw,13vw,12vw);
+        width: auto;
+        margin-top: 2vw;
+        padding-left: 6vw;
+    }
+
+    .nav-mobile{
+        display: flex;
+    }
+
+    .nav-mobile ul li a svg{
+        margin-left: 6.3vw;
+        font-size: clamp(6vw, 6vw, 7vw);
+        margin-top: 1.5vw;
+        color: var(--accent);
+        list-style: none;
+        z-index: 100;
+    }
+
+    .nav-container{
+        width: 90%;
+        transform: translate(5.5%, -9%);
+        border-radius: 30px;
+        font-size: 6.5vw;
+        height: clamp(8%, 15vw, 14%);
+    }
+    .nav-list{
+        margin-right: 10vw;
+    }
+
+    .nav-items-mobile{
+        margin-left: 2vw;
+    }
+
+    .video-banniere{
+       height: 100vh;
+    }
+
+    #video-menu{
+        width: clamp(15.5vw,26vw,26.5vw);
+        height: clamp(5.5vw,7vw,7.5vw);
+    }
+    
+    #video-commande{
+        width: clamp(15.5vw,26vw,26.5vw);
+        height: clamp(5.5vw,7vw,7.5vw);
+    }
+
+    .video-button a{
+        font-size: clamp(3.5vw, 3.5vw, 4.5vw);
+        padding-top: clamp(1.5vw, 2vw, 2.5vw);
+    }
+}
